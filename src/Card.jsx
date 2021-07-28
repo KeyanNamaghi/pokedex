@@ -31,6 +31,11 @@ const Card = ({ pokemon }) => {
       <img className="projects__card-image" alt={pokemon.name} src={baseURL + pokemon.id + '.png'} />
       <div className="projects__card-details">
         <strong className="projects__card-name">{pokemon?.name}</strong>
+        <div className="projects__card-description">
+          {pokemon?.types?.map((type) => (
+            <p className="projects__card-type">{type}</p>
+          ))}
+        </div>
       </div>
     </StyledCard>
   )

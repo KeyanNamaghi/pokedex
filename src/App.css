@@ -25,7 +25,7 @@
 }
 
 .projects__card-details {
-  padding: 15px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -34,6 +34,25 @@
   margin-bottom: 10px;
 }
 
+.projects__card-name:first-letter {
+  text-transform: capitalize;
+}
+
+.projects__card-type {
+  margin: 0px 10px 0px 0px;
+  /* background: #3d7dca; */
+  color: black;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 1000px;
+}
+
+.projects__card-type:first-letter {
+  text-transform: capitalize;
+}
+
 .projects__card-description {
+  display: flex;
   font-size: small;
+  font-weight: bold;
 }
